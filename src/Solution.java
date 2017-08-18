@@ -20,7 +20,6 @@ public class Solution {
         System.out.println(getMean(n, x));
         System.out.println(getMedian(n, x));
         System.out.println(getMode(n, x));
-
     }
 
     public static double getMean(double[] n, int x) {
@@ -41,7 +40,6 @@ public class Solution {
         } else {
             return (n[n.length / 2] + n[(n.length / 2) - 1]) / 2;
         }
-
     }
 
     // get mode: the highest number of occurrences of each element in the array
@@ -55,7 +53,7 @@ public class Solution {
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < x; j++) {
                 if (n[i] == n[j]) { //if same ele is found, make ele mode.
-                    frequency++; // =2
+                    frequency++; // = 2
                 }
             }
 
@@ -66,20 +64,12 @@ public class Solution {
             } else {
                 frequency = 0;
             }
-
         }
         return modeValue;
     }
 }
 
 /*
-
 10
 64630 11735 14216 99233 14470 4978 73429 38120 51135 67060
-
-
-
-
-
-
- */
+*/
